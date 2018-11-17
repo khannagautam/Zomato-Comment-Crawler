@@ -1,0 +1,3 @@
+find -name $'*\n*' -exec rename  $'s|\n||g' '{}' \;
+for f in *; do mv $f `basename $f `.txt; done;
+
